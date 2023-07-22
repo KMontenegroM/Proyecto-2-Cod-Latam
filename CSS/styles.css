@@ -5,6 +5,9 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
+
+
+
 }
 
 /* main styling */
@@ -12,7 +15,13 @@ html,
 body{
     font-family: "Monserrat", sans-serif;
     line-height: 1,5;
+    transition: .3s, ease all;
+
+
+   
+   
 }
+
 h1{
     font-size: 2.5rem;
 }
@@ -25,10 +34,15 @@ h2{
 h3{
     font-size: 1rem;
 }
+
+
 h1,
 h2,
 h3 {
+
+   
     margin-bottom: 15px;
+    text-align: center;
 }
 
 ul{
@@ -37,19 +51,23 @@ ul{
 }
 
 p {
-    font-size: 1rem;
+    font-size: 2rem;
     margin: 10px 0;
     line-height: 1,7em;
 
 }
 
+
+
 a {
     text-decoration: none;
+    text-align: center;
 }
 
 /*utility class*/
 
 .container {
+
     max-width: 1100px;
     margin: o auto;
     padding: o 30px;
@@ -68,24 +86,33 @@ a {
 
 .btncv {
 
+    width: 20%;
+    height: 15px;
+    min-height: 10%;
     background-color: sandybrown;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
     font-size: 15px;
-    padding: 12px 23px;
+    padding: 20px 20px;
     cursor: pointer;
     font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 10px;
+    border-radius: 6px;
     color: aliceblue;
     border: 2px solid sandybrown;
+    
 
 
 }
 
 .btncv:hover {
 
+
+    width: 20%;
+    height: 15px;
     background: #fbfbfb;
-    border: 10px solid sandybrown;
+    border: 6px solid sandybrown;
     color: sandybrown;
 }
 
@@ -93,7 +120,7 @@ a {
 
     background-color: greenyellow;
     color: #000;
-    height: 80px;
+    height: 90px;
 
 }
 
@@ -117,6 +144,7 @@ a {
 }
 
 .navbar .container{
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,14 +157,24 @@ a {
 }
 
 .navbar li {
-       margin-left: 10px;
+       margin-left: 20px;
 
 }
+
+#switch {
+       
+
+    }
+
+
+
+
 
 .mainheader {
     background-color: aliceblue;
     color: black;
     min-height: 400px;
+    align-items: center;
     
 
 }
@@ -156,6 +194,7 @@ a {
 }
 
 .mainheader .container{
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -175,75 +214,122 @@ a {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-items: center;
+    
 }
 
 .features .box1{
     
-    display: block;
-    margin: 20px 80px;
-    justify-content: baseline;
-    padding: 50px 50px;
+    flex: 1;
+    margin: 10% 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10% 40px;
     background-color: rgb(216, 203, 202);
     width: 100%;
     
 }
 
 .features p {
-    font-size: 16px;
+
+    font-size: 22px;
+    font: bold;
     text-align: center;
     
 }
 
-.iconos .container {
+ 
+.iconos .container{
+
+    justify-content:center;
+    display: flex;
+    background: #f1f1f1;
+  
+
+   
+
+}
+
+
+
+
+
+
+#Contacto  {
 
     display: flex;
-    justify-content:center;
+    justify-content:right;
+    align-items: center;
     text-align: center;
+    background: #f1f1f1;
 }
+
+
+
+
+
 
 .row-box1{
 
     flex: 1;
-    align-items: left;
-    width: 80px;
-    min-height: 120px;
-    margin: 20px 60px;
-    padding: 10px 2px;
+    align-items: center;
+    justify-content: center;
+    
         
 }
 
 .row-box2{
 
-    flex: 1;
+    
     align-items: center;
-    width: 80px;
-    min-height: 120px;
-    margin: 20px 60px;
-    padding: 10px 2px;
+    justify-content: center;
+ 
         
 }
 
-.row-box3{
+#Contacto{
 
     flex: 1;
     align-items: right;
-    width: 80px;
-    min-height: 120px;
-    margin: 20px 60px;
-    padding: 10px 2px;
+    justify-content: right;
+    width: 100px;
+    max-height: 100px;
+    margin: 20 40px;
+    padding: 10 2px;
         
 }
+
 .mail{
-    justify-items: right;
+
+    display: flex;
+    width: 100px;
+    background: #f1f1f1;
+    max-height: 100px;
+    margin: 20 60px;
+    padding: 10 2px;
+    justify-content: left;
 }
 
 .git{
-    justify-items: center;
+    
+    display: flex;
+    width: 100px;
+    max-height: 100px;
+    margin: 20 40px;
+    padding: 10 2px;
+    justify-content: center;
 }
 
 .linkedin {
-    justify-items: left;
+
+    display: flex;
+    width: 100px;
+    max-height: 100px;
+    margin: 20 60px;
+    padding: 10 2px;
+    justify-content: right;
+    
 }
 
 #footer {
@@ -256,7 +342,7 @@ a {
 }
 
 /*Responsive*/
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
         .mainheader .container 
     { flex-direction:column;
       padding-top: 20px;
@@ -269,3 +355,11 @@ a {
     
     
     }
+
+@media screen and (min-width: 700px) {
+    .body .mainheader .features .iconos .container
+     {background-color: aquamarine;
+
+    }
+    
+}

@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <script src="https://kit.fontawesome.com/790ac47ef0.js" crossorigin=""></script>
     <title>Karelis Montenegro</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
     <nav class="navbar">
          <div class="container"> 
             <div class="logo"> 
-            <img width="80px" src="Kareli 1.png" alt="">
+            <img width="80px" src="CSS/imagenes/Kareli 1.png" alt="">
             </div>
                  <ul class="nav"> 
                     <li><a href="#Inicio">Inicio</a>
                      </li>
-                    <li><a href="#Contacto">Contacto</a>
+                    <li id="item"><a href="#Contacto"class="active"> Contacto</a>
                     </li>    
+                    
                 </ul>
+             
 
         </div>
     </nav>
 
     <header class="mainheader">
         <div class="container">
-            <img width="350px" src="Kare 2.jpg" alt="">
+
+            
+            <a href="CSS/imagenes/Kare 3.jpg" onMouseOver="primera" (‘kare3’); onMouseOut="segunda"(‘kare3’);>
+           
+          
+                <img id="kare2" width="350px" src="CSS/imagenes/Kare 2.jpg" alt=""></a>
+
+                       
             <div class="showcase">
-                <h1 id="Inicio"> Hola! Soy Karelis <br  /> </h1>
+                <h1 id="Inicio"> Hola! Soy Karelis <br> </h1>
                 <p class="large">
                 Analista Contable Senior con más de 5 años de trayectoria, enfocados en empresas del rubro hotelero, inmobiliario, comercial, en áreas como logística, atención al cliente, auditoria, contabilidad, facturación y reportes. Participando estratégicamente en la planificación contable/financiera de la empresa, dando el mayor aporte en información, permitiendo así coadyuvar en la toma de decisiones adecuadas y beneficiosas para la buena rentabilidad de la compañía.
                 </p>
@@ -51,23 +61,25 @@
 
 
     <section class="iconos">
+
         <div class="container">
             <div class="row-box1">
                <a target="_blank" href="mailto:karelis.montenegrom@gmail.com">
-                <img class="mail" width="70px" src="mail.png">
+                <img class="mail" src="CSS/imagenes/mail.png">
                </a> 
                        
             </div>
+
             <div class="row-box2">
-                
-                <img class="git" width="70px" src="github.png" alt=""></a>
+                <a target="_blank" href="git remote add origin https://github.com/KMontenegroM/Proyecto-2. git">
+                <img class="git" src="CSS/imagenes/github.png" alt=""></a>
                        
              </div>
-            <div class="row-box3">
-                
+
+            <div id="Contacto">
                 
                 <a target="_blank" href="https://www.linkedin.com/in/karelysmontenegrom/">
-                    <img class="linkedin" width="70px" src="linkedin.png" alt=""></a>     
+                        <img class="linkedin" src="CSS/imagenes/linkedin.png" alt=""></a>     
     
             </div>
         
@@ -88,7 +100,7 @@
     </footer>
     
 
-
+   <script src="JS/java.js"></script>
     
-</body>
+  </body>
 </html>
